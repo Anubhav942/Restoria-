@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restoria hotel & resort</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" class="css">
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+
+<body>
+
+<header>
+  <nav>
+
+    <div class="logo">
+      <img src="logo.jpg" alt="Restoria Logo" class="logo-img">
+      Restoria
+    </div>
+
+    <!-- Hamburger Icon -->
+    <div class="hamburger" id="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Navigation Links -->
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#rooms">Rooms</a></li>
+      <li><a href="#deals">Deals</a></li>
+      <li><a href="#booking">Book</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#" id="logoutBtn">Logout</a></li>
+    </ul>
+
+  </nav>
+
+  <!-- Home -->
+  <section class="hero">
+    <div class="stars">★ ★ ★ ★ ★</div>
+    <h1>Restoria Hotel & Resort</h1>
+    <p>
+      Experience nature in its purest form, while enjoying attention to detail,
+      indulgent pampering and exceptional cuisine.
+    </p>
+    <div class="scroll-down">⌄</div>
+  </section>
+</header>
+
+<!-- About -->
+<section id="about">
+  <h2>About Restoria</h2>
+  <div class="about-content">
+    <img src="about.jpg" alt="About Restoria Hotel" class="about-image">
+    <p>
+      Restoria is a luxury hotel that blends elegance with comfort. Located in the
+      heart of nature, we offer the perfect escape.
+    </p>
+  </div>
+</section>
+
+<!-- Room -->
+<section id="rooms" class="section">
+  <h2>Our Rooms</h2>
+  <div class="rooms">
+    <a href="room.html" class="room-card">
+      <h3>Double Deluxe</h3>
+      <p>Romantic Getaway for Two.</p>
+    </a>
+
+    <a href="room2.html" class="room-card">
+      <h3>Sea view Suites</h3>
+      <p>King size bed.</p>
+    </a>
+  </div>
+</section>
+
+<!-- Deals -->
+<section id="deals" class="section">
+  <h2>Our Deals</h2>
+  <p>Get your favorite deals and save big on your next dream</p>
+  <p>vacation.</p>
+
+  <div class="deal-cards">
+
+    <div class="deal-card">
+      <img src="deal1.jpg" alt="Deal 1">
+      <h3>Snorkling for Two</h3>
+      <p>Up to 30% off on beach resorts. Limited time offer!</p>
+      <button type="submit">Book now</button>
+    </div>
+
+    <div class="deal-card">
+      <img src="deal2.jpg" alt="Deal 2">
+      <h3>Romantic Getaway</h3>
+      <p>Romantic getaway with spa & candlelight dinner. Save 20%!</p>
+      <button type="submit">Book now</button>
+    </div>
+
+    <div class="deal-card">
+      <img src="room2.jpg" alt="Deal 3">
+      <h3>Ultimate Package</h3>
+      <p>Book 3 nights and get the 4th night free. Breakfast included!</p>
+      <button type="submit">Book now</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- Room Booking -->
+<section id="booking" class="section">
+  <h2>Book Your Stay</h2>
+
+  <form id="booking-form">
+    <label for="name">Full Name</label>
+    <input type="text" placeholder="Name" required>
+
+    <label for="email">Email Address</label>
+    <input type="email" placeholder="Email" required>
+
+    <label for="room">Rooms</label>
+    <select name="room" id="rooms">
+      <option value="Double Deluxe">Double Deluxe</option>
+      <option value="Sea View Suites">Sea View Suites</option>
+    </select>
+
+    <label for="Days">Number of Days</label>
+    <input type="number" placeholder="Number of Days" required>
+
+    <label for="member">Guests</label>
+    <input type="number" placeholder="Guests" required>
+
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<!-- Contact -->
+<section class="section white-bg" id="contact">
+  <div class="container clearfix">
+
+    <div class="col-lg-12 centered header-wrapper">
+      <h2>Contact Us</h2>
+      <p class="large">
+        If you have any questions, feedback or would like to book a trip,
+        please contact us. We'll get back to you asap!
+      </p>
+    </div>
+
+    <div class="col-lg-3 col-md-3 centered contact-wrapper">
+      <i class="fa-solid fa-location-dot"></i>
+      <p class="small">Address</p>
+      <p>
+        Oceanview Dr 103<br>
+        Malé 20292<br>
+        Maldives
+      </p>
+    </div>
+
+    <div class="col-lg-3 col-md-3 centered contact-wrapper">
+      <i class="fa-solid fa-phone"></i>
+      <p class="small">Phone/Fax</p>
+      <p>
+        (845) 123-456 0<br>
+        (845) 123-456 78
+      </p>
+    </div>
+
+    <div class="col-lg-3 col-md-3 centered contact-wrapper">
+      <i class="fa-solid fa-envelope"></i>
+      <p class="small">Email</p>
+      <p>
+        <a href="mailto:info@restoriahotel.com">info@restoriahotel.com</a>
+      </p>
+    </div>
+
+    <div class="col-lg-3 col-md-3 centered contact-wrapper">
+      <i class="fa-solid fa-share"></i>
+      <p class="small">Social</p>
+      <p>Connect with Us:</p>
+      <ul class="social-list clearfix">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-vimeo"></i>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <p>&copy; 2025 Restoria. All rights are reserved.</p>
+</footer>
+
+<!-- IMPORTANT: Script loaded ONCE and as MODULE -->
+<script type="module" src="script.js"></script>
+
+</body>
+</html>
